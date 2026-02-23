@@ -73,12 +73,6 @@ Generating text using the trained language model:
 - Jupyter Notebooks
 - NumPy
 
-## Learning Resources
-
-This project is inspired by and follows concepts from:
-- "Build a Large Language Model From Scratch" by Sebastian Raschka
-- Attention Is All You Need (Vaswani et al.)
-- GPT and GPT-2 papers
 
 ## Running the Code
 
@@ -96,13 +90,3 @@ jupyter notebook
 
 3. Start with `tokenizer/tokenization.ipynb` and progress through each component.
 
-## Next Steps
-
-- [ ] Fine-tuning on specific tasks
-- [ ] Implementing advanced decoding strategies
-- [ ] Performance optimization
-- [ ] Deployment considerations
-
-## Notes
-
-This is an educational project focused on understanding LLM internals. The implementation prioritizes clarity and learning over production-ready performance.
