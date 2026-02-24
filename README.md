@@ -13,6 +13,7 @@ This is my journey of building a GPT-style language model by implementing each c
 - [x] Transformer architecture
 - [x] Pretraining on unlabeled data
 - [x] Text generation
+- [x] Instruction finetuning (supervised fine-tuning)
 
 ## Project Structure
 
@@ -26,6 +27,9 @@ build-llm-scratch/
 │   └── pretraining.ipynb
 ├── text_generation/                # Text generation with trained models
 │   └── llm_from_scratch_generate_text.ipynb
+├── finetuning/                     # Instruction finetuning (SFT)
+│   ├── instruction_finetuning.ipynb
+│   └── ch07.ipynb
 └── downloads/                      # Reference materials and datasets
 ```
 
@@ -66,27 +70,13 @@ Generating text using the trained language model:
 
 **Notebook:** [text_generation/llm_from_scratch_generate_text.ipynb](text_generation/llm_from_scratch_generate_text.ipynb)
 
-## Technologies Used
+### Instruction Finetuning (Supervised Fine-Tuning)
 
-- Python
-- PyTorch
-- Jupyter Notebooks
-- NumPy
+Fine-tuning a pretrained GPT-2 medium (355M) model to follow instructions using the Alpaca-style prompt format.
+
+**Notebooks:**
+- [finetuning/instruction_finetuning.ipynb](finetuning/instruction_finetuning.ipynb) — full run with outputs
 
 
-## Running the Code
 
-Each component is implemented in a separate Jupyter notebook. To run:
-
-1. Install dependencies:
-```bash
-pip install torch numpy jupyter matplotlib tiktoken
-```
-
-2. Open the notebooks in order:
-```bash
-jupyter notebook
-```
-
-3. Start with `tokenizer/tokenization.ipynb` and progress through each component.
 
